@@ -10,7 +10,7 @@
 
     - name: copy nginx config file
 
-      copy: src=/root/exam-pristov1/nginx.conf dest=/etc/nginx/sites-available/default
+      copy: src=/root/script/nginx.conf dest=/etc/nginx/sites-available/default
 
     - name: enable configuration
 
