@@ -1,0 +1,26 @@
+git clone https://github.com/Sasha20004/exam-pristov1.git
+
+touch /root/exam-pristov1/hosts
+
+git clone https://gitlab.com/staskuznetsov/site.git -b main
+
+echo 4.224.26.223 > /root/exam-pristov1/hosts
+
+ansible-playbook -i /root/exam-pristov1/hosts /root/exam-pristov1/playbook.yml
+
+rm -Rf  /root/site
+
+git clone https://gitlab.com/staskuznetsov/site.git -b dev
+
+echo 20.204.120.120 > /root/exam-pristov1/hosts
+
+ansible-playbook -i /root/exam-pristov1/hosts /root/exam-pristov1/playbook.yml
+
+rm -Rf /root/site
+
+git clone https://gitlab.com/staskuznetsov/site.git -b feature
+
+echo 20.250.30.116 > /root/exam-pristov1/hosts
+
+ansible-playbook -i /root/exam-pristov1/hosts /root/exam-pristov1/playbook.yml
+
