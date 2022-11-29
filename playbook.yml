@@ -18,7 +18,7 @@
 
     - name: copy index.html
 
-      template: src=/root/site/index.html dest=/usr/share/nginx/html/index.html mode=0664
+      template: src=/var/lib/jenkins/workspace/pipeline1/site dest=/usr/share/nginx/html/index.html mode=0664
 
     - name: restart nginx
     
