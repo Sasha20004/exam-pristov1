@@ -72,7 +72,7 @@ pipeline {
     stage('Stage 7. deploying branch dev to Prob3 20.250.30.116') {
       steps {
       //cleanWs() // Clean before build
-      sh "echo '****************** start deploying branch dev to Prob3 20.100.193.178 ********************'"
+      sh "echo '****************** start deploying branch dev to Prob3 20.250.30.116 ********************'"
       sh "touch /var/lib/jenkins/workspace/pipeline2/jenkins/hosts"
       sh "echo 20.250.30.116 > /var/lib/jenkins/workspace/pipeline2/jenkins/hosts"
       sh "ansible-playbook /var/lib/jenkins/workspace/pipeline2/jenkins/playbook.yml -u root --key-file=/key/id_rsa -i /var/lib/jenkins/workspace/pipeline2/jenkins/hosts"
